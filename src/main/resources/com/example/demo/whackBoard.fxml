@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.WhackBoardController">
+   <children>
+      <GridPane layoutX="118.0" layoutY="96.0" prefHeight="257.0" prefWidth="370.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="img02" fitHeight="91.0" fitWidth="125.0" onMouseClicked="#MoleClicked" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img21" fitHeight="91.0" fitWidth="125.0" onMouseClicked="#MoleClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img10" fitHeight="90.0" fitWidth="142.0" onMouseClicked="#MoleClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img20" fitHeight="91.0" fitWidth="125.0" onMouseClicked="#MoleClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img01" fitHeight="91.0" fitWidth="125.0" onMouseClicked="#MoleClicked" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img11" fitHeight="91.0" fitWidth="125.0" onMouseClicked="#MoleClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img00" fitHeight="91.0" fitWidth="125.0" onMouseClicked="#MoleClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img12" fitHeight="91.0" fitWidth="125.0" onMouseClicked="#MoleClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img22" fitHeight="91.0" fitWidth="125.0" onMouseClicked="#MoleClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Text fx:id="strScore" layoutX="207.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score:" wrappingWidth="92.8033447265625">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text fx:id="scoreNum" layoutX="303.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="92.8033447265625">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imgWhack" fitHeight="284.0" fitWidth="426.0" layoutX="106.0" layoutY="90.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@MoleWhack.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="win" fill="#d952eb" layoutX="65.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Win~!" visible="false" wrappingWidth="477.4700393676758">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
